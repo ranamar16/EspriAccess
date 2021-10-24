@@ -1,8 +1,8 @@
-export const web3 = new Web3(ethereum);
+const web3 = new Web3(ethereum);
 
-export let address;
-export let abi;
-export let mintPrice;
+let address;
+let abi;
+let mintPrice;
 
 address = window.CONTRACT_ADDRESS;
 abi = [
@@ -522,5 +522,6 @@ abi = [
     }
 ];
 
-export let contract = new web3.eth.Contract(abi, address);
+let contract = new web3.eth.Contract(abi, address);
 window.contract = contract;
+window.web3 = web3;

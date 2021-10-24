@@ -1,6 +1,3 @@
-import { web3, connectMetaMask } from './connectWallet.js';
-// default libraries that make all of this possible
-
 const mintRequest = async () => {
     try {
         var url = 'https://server.getespri.com/api/ip/create';
@@ -27,5 +24,4 @@ const main = async()=>{
 }
 
 document.querySelector('#mint-nft').addEventListener('click', main);
-window.web3 = web3;
 window.mint = mint;
