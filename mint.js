@@ -1,6 +1,6 @@
 const mintRequest = async () => {
     try {
-        var url = 'https://server.getespri.com/api/ip/create';
+        var url = 'https://server.getespri.com/api/ip/mint';
         var xhr = new XMLHttpRequest();
         xhr.open("POST", url, true);
         xhr.setRequestHeader('Content-Type', 'application/json');
@@ -24,4 +24,3 @@ const main = async()=>{
 }
 
 document.querySelector('#mint-nft').addEventListener('click', main);
-window.mint = mint;
