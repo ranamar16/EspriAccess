@@ -1,4 +1,4 @@
-import { web3 } from './connectWallet.js';
+export const web3 = new Web3(ethereum);
 
 export let address;
 export let abi;
@@ -523,3 +523,4 @@ abi = [
 ];
 
 export let contract = new web3.eth.Contract(abi, address);
+window.contract = contract;

@@ -1,4 +1,3 @@
-import { address, contract } from './contract.js';
 import { web3, connectMetaMask } from './connectWallet.js';
 // default libraries that make all of this possible
 
@@ -28,6 +27,5 @@ const main = async()=>{
 }
 
 document.querySelector('#mint-nft').addEventListener('click', main);
-window.contract = contract;
 window.web3 = web3;
 window.mint = mint;
