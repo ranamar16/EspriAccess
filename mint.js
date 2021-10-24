@@ -1,12 +1,6 @@
 import { address, contract } from './contract.js';
 import { web3, connectMetaMask } from './connectWallet.js';
 // default libraries that make all of this possible
-import { ImmutableXClient } from '@imtbl/imx-sdk';
-import { AlchemyProvider } from '@ethersproject/providers';
-import { Wallet } from '@ethersproject/wallet';
-
-// setting up the provider
-const provider = new AlchemyProvider('ropsten', window.ALCHEMY_API_KEY);
 
 const mintRequest = async () => {
     try {
